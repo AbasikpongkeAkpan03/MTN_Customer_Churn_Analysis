@@ -1,9 +1,12 @@
 # MTN_CUSTOMER_CHURN_ANALYSIS
-This involves the step-by-step Analysis of MTN customer churn for first quarter of the year 2025.
+This involves the step-by-step Analysis of MTN customer churn for the first quarter of the year 2025.
 
 ## TABLE OF CONTENTS
 - [PROJECT OVERVIEW](project-overview)
-- [DASBOARD](dashboard)
+- [DASBOARD 1](dashboard_1)
+- [DASBOARD 2](dashboard_2)
+- [DASBOARD 3](dashboard_3)
+- [DASBOARD 4](dashboard_4)
 - [DATA SOURCE](data-source)
 - [TOOLS](tools)
 - [DATA CLEANING](data-cleaning)
@@ -17,13 +20,16 @@ This involves the step-by-step Analysis of MTN customer churn for first quarter 
 ### PROJECT OVERVIEW
 This analysis looks at MTN's customer base, the amount of money made, the feedback customers gave in their reviews, and why some stopped using the service in the first quarter of 2025.
 
-## DASBOARD  
+## DASHBOARD 1
 ![Screenshot 2025-05-24 184117](https://github.com/user-attachments/assets/dd13006e-6218-4e7c-a524-45c857d315d0)
 
+## DASHBOARD 2
 ![Screenshot 2025-05-24 184048](https://github.com/user-attachments/assets/5e8c8700-bc6b-4c63-8ca2-1aff0243b526)
 
+## DASHBOARD 3
 ![Screenshot 2025-05-24 181221](https://github.com/user-attachments/assets/09e0b21b-f99b-4750-96d9-369aa213f18d)
 
+## DASHBOARD 4
 ![Screenshot 2025-05-24 181145](https://github.com/user-attachments/assets/01cab084-8081-4a22-823d-88f3306ea5e2)
 
 ### DATA SOURCE:
@@ -37,61 +43,150 @@ The only dataset used in this analysis is the "MTN customer churn.csv", obtained
 ## DATA CLEANING
 In the data cleaning phase, I performed the following tasks:
 
-1. Data Loading and inspection
+1. Data Loading and Inspection
 2. Handling missing data
 3. Data formatting
 
 ### EXPLORATORY DATA ANALYSIS
+- How many customers?
+- How much revenue was generated?
+- How many customers churned, and how many are left?
 - How Correlated is the numeric content of this dataset?
 
 ### RESULTS
+- Total Number of Customers: 496
+- Total Revenue Generated: 199M
+- 146 churned customers and 350 customers left.
 - There is very low Correlation
-  
 
-### INSIGHTS AND FINDINGS
-#### 1. Top Performing Categories by Views and Likes:
-- Music is the dominant category with over 5.6 billion views and more than 345K likes, making it the most popular and engaging genre.
-- People & Blogs, Entertainment, and Comedy also perform strongly in both views and likes, highlighting their broad appeal.
-- Gaming and Sports show significant engagement but lower overall views compared to the top categories.
+## INSIGHTS AND FINDINGS 
 
-#### 2. Dislikes Distribution by Category:
-- Music and Entertainment receive the highest number of dislikes, likely due to higher viewership.
-- Categories such as Science & Technology, Education, and Nonprofits receive relatively fewer dislikes, possibly reflecting niche or informative content with targeted audiences.
+### DASHBOARD 1 
+#### 1. Number of Customers by MTN Devices Purchased:
+- "Mobile SIM Card" has the highest number of customers (296). This is expected as most users would have a SIM card.
+- "5G Broadband Router" and "Broadband Mifi" have a substantial number of customers (229 and 216 respectively), indicating a strong uptake of dedicated broadband solutions.
+- "4G Router" has fewer customers.
 
-#### 3. Publishing Trends Over the Years:
-- There was a massive spike in views and likes around 2019, suggesting a peak in viral content or platform growth.
-- Recent years (2023–2024) show a resurgence in video performance, indicating increased engagement or improved content strategies.
+#### 2.Number of Customers by Bottom 5 States:
+Akwa Ibom, Bayelsa, Delta, Kano, Rivers, Lagos, Ondo, and Kaduna are listed as bottom 5 states (though more than 5 are shown). The number of customers in these states is relatively low (between 8 and 10), consistent with their lower revenue generation.
 
-#### 4. Likes vs Views Relationship:
-- While Music leads in both metrics, some categories like Education and Science & Technology show relatively fewer likes despite moderate views, hinting at passive consumption.
+#### 3. Number of Customers by Top 5 States:
+Bauchi, Kogi, Osun, Abia, and Borno are the top 5 states by customer count, with 20 customers each in Bauchi, Kogi, and Osun, and 18 in Abia and Borno. This aligns with the top revenue-generating states.
+
+#### 4. Number of Customers by Age Brackets:
+"Middle Adult" (163 customers) and "Adult" (133 customers) represent the largest customer segments, mirroring their revenue contribution.
+"Senior Adult," "Old Adult," "Young Adult," and "Teenager" have progressively fewer customers.
+
+#### 5. Number of Customers by Top 10 Subscription Plans:
+- "60GB Monthly Broadband Plan" has the highest number of customers (79).
+- "150GB FUP Monthly Unlimited" (75) and "165GB Monthly Plan" (73) also have a significant number of customers.
+- These findings align with the top revenue-generating plans, indicating popular and frequently purchased options.
+
+### DASHBOARD 2
+#### 1. Revenue Generated by MTN Devices Purchased:
+- "5G Broadband" is by far the highest revenue generator (over 100M).
+- "Broadband Mifi" is next (around 50M).
+- "4G Router" and "Mobile SIM Card" generate significantly less revenue. This highlights the substantial revenue contribution from dedicated broadband devices.
+
+#### 2. Top 5 Revenue Generating States:
+- Osun, Enugu, Akwa Ibom, Kogi, and Bauchi are the top 5 revenue-generating states. Osun leads with over 8M.
+
+#### 3. Bottom 5 Revenue Generating States:
+- Bayelsa, Delta, Kano, Rivers, and Lagos are the bottom 5 revenue-generating states. Lagos is surprisingly low with around 2M, which could indicate a smaller customer base for broadband or different usage patterns in the analyzed segment.
+
+#### 4. Revenue Generated by Age Brackets:
+- "Middle Adult" and "Adult" age brackets generate the most revenue (around 70M and 57M, respectively).
+- "Senior Adult" and "Old Adult" also contribute significantly.
+- "Young Adult" and "Teenager" contribute the least. This indicates that the core revenue comes from the middle-aged and older adult segments.
+
+#### 5. Top 10 Revenue Generating Subscription Plans:
+- "150GB FUP Monthly Plan" is the highest revenue generator (over 20M).
+- "150GB FUP Monthly Unlimited" and "100GB FUP Monthly Unlimited" are also major contributors.
+- Higher data volume broadband plans are clearly the top revenue drivers.
+
+#### 6. Average Number of Times Purchased by Subscription Plan:
+- Plans like "120GB Monthly Unlimited" (12.75 times), "30GB Monthly" (11.93 times), "20GB Monthly" (11.66 times), and "60GB Monthly" (11.53 times) are purchased most frequently. This suggests customers are regularly subscribing to these plans.
+- Conversely, plans like "300GB Monthly" and "200GB Monthly" (at the right end, around 9.5 times) are purchased less frequently, possibly due to their higher price point or niche usage.
+
+### DASHBOARD 3
+#### 1. Customer Review Distribution:
+- A significant number of customers provide "Very Good" and "Good" reviews, suggesting general satisfaction. There are fewer "Fair" and "Bad" reviews.
+
+#### 2. Average Data Usage by Customer Review: Customers who give "Very Good" and "Good" reviews tend to have higher average data usage compared to those who give "Fair" or "Bad" reviews. - - This suggests a correlation between satisfaction and data consumption. Higher data consumption might indicate more engagement and satisfaction.
+
+#### 3. Average Data Usage by MTN Device:
+- "5G Router" shows the highest average data usage (26.1%).
+- "Broadband Mifi" is also high (25.58%).
+- "Mobile SIM Card" and "4G Router" show lower average data usage. This indicates that customers using dedicated broadband devices consume significantly more data.
+
+#### 4. Average Satisfaction Rate by MTN Device:
+- "Broadband Mifi" users have the highest satisfaction rate (around 3.8).
+- "5G Broadband" users also show high satisfaction (around 3.7).
+- "Mobile SIM Card" and "4G Router" have lower satisfaction rates. This aligns with the data usage finding – higher data consumption via dedicated devices seems to correlate with higher satisfaction.
+- Average Customer Tenure by Customer Review: Customers giving "Very Good" and "Good" reviews tend to have longer average tenures (around 30 months) compared to those giving "Fair" or - - "Bad" reviews (around 28 months). This suggests that satisfied customers stay longer.
+
+#### 6. Average Satisfaction Rate by Subscription Plan:
+- There's a wide range of satisfaction across different subscription plans.
+- Plans like "20GB 1-Month Daily Plan" (Highest at 3.8) and "30GB Monthly Broadband Plan" show higher satisfaction.
+- Plans like "10GB + 10 Mins Monthly Plan," "10GB Monthly Unlimited," "12.5GB Monthly Plan," "1.5GB 1-Day Plan," and "30GB Monthly" (the ones towards the right with lower bars) have notably lower satisfaction rates (below 2.5). This is a critical finding, as certain plans are clearly underperforming in terms of customer satisfaction.
+
+### DASHBOARD 4
+#### 1. Overall Churn Status:
+- Out of a total of 496 customers analyzed, 146 customers (29.4%) have churned, while 350 customers (70.6%) have not. This indicates a significant churn rate that needs addressing.
+
+#### 2. Customer Gender Distribution:
+- The customer base is almost evenly split between genders: 246 females (49.6%) and 250 males (50.4%). Churn doesn't appear to be disproportionately linked to one gender over the other based on this high-level view.
+
+#### 3. Churn by Reasons:
+- Better Offers from Competitors (29 customers): This is the leading cause of churn, highlighting strong competition in the market.
+- High Call Tariffs (26 customers): Pricing for calls is a significant factor in customers leaving.
+- Costly Data Plans (20 customers): Data plan pricing is another major contributor to churn.
+- Poor Network (20 customers): Network quality issues are driving customers away.
+- Fast Data Consumption (18 customers): Customers are dissatisfied with how quickly their data is used up.
+- Poor Customer Service (18 customers): Issues with customer support are contributing to churn.
+- Relocation (15 customers): While a factor, relocation is less controllable by MTN compared to other reasons.
+
+#### 4. Monthly Trends (Based on the buttons, but no data shown for February/March):
+-The dashboard allows for filtering by months (February, January, March). 
+Geographical Distribution (States):
+- The dashboard includes a list of states; this filter would enable identification of regional churn hotspots.
+
 
 ### RECOMMENDATIONS
-1. Capitalize on High-Engagement Categories
-- Focus content creation and marketing efforts on Music, People & Blogs, Entertainment, and Comedy—these categories consistently generate high views and likes, indicating strong audience interest and engagement.
-- Collaborations with influencers or creators in these categories can amplify reach and boost campaign success.
+#### 1. Value-Centric Product & Pricing Strategy:
+Proactively address competitive pricing and perceived value gaps, which are the leading causes of churn. This isn't just about being cheaper, but about offering more perceived value for money across all segments.
+##### Actionable steps:
+- Dynamic Pricing Models: Implement flexible and competitive pricing for both voice and data, particularly for mobile SIM card users. Consider tiered data plans, usage-based discounts, or family bundles that offer superior value compared to competitors.
+- Targeted Loyalty Offers: Develop and implement robust loyalty programs that reward long-term customers and offer personalized deals (e.g., bonus data, discounts on upgrades, exclusive content) to prevent them from seeking competitor offers.
+- Bundling & Upselling: Create attractive bundles that combine high-satisfaction services (e.g., dedicated broadband devices with high-volume data plans) with voice services to increase overall customer value and stickiness.
+- Address Plan-Specific Dissatisfaction: Systematically review and revise subscription plans identified with low satisfaction. This may involve increasing data allowances, reducing prices, or bundling value-added services.
 
-2. Enhance Content Quality in High-Dislike Categories
-- While Music and Entertainment receive the highest dislikes, this may reflect the sheer volume of views. However, it also signals a need to monitor audience sentiment and improve content quality or engagement strategies (e.g., responding to feedback, refining video titles/thumbnails).
+#### 2. Uncompromising Network Quality & Performance:
+Given "poor network" and "fast data consumption" as significant churn drivers, continuous investment in and optimization of network infrastructure are paramount.
+##### Actionable Steps:
+- Network Expansion & Optimization: Prioritize investments in expanding 5G and broadband network coverage and capacity, especially in areas with high churn or high customer density.
+Data Consumption Transparency: Provide customers with intuitive tools and regular notifications to monitor their data consumption and avoid bill shock or unexpected depletion. Consider data rollover features.
+- Proactive Maintenance: Implement robust network monitoring and predictive maintenance to minimize downtime and ensure consistent service quality. Communicate service improvements transparently.
 
-3. Nurture Niche Categories for Educational or Informative Content
-- Education, Science & Technology, and Nonprofits show low dislike rates but relatively modest engagement. These categories can benefit from targeted promotion and interactive formats (e.g., live Q&A, tutorials) to convert passive viewers into active engagers.
+#### 3.Exceptional Customer Experience & Service:
+Address "poor customer service" by empowering frontline staff and leveraging technology to provide seamless and effective support.
+##### Actionable Steps:
+- Training & Empowerment: Provide extensive training to customer service representatives, focusing on empathy, problem-solving, and first-call resolution. Empower them to make immediate decisions to resolve common customer issues.
+- Multi-Channel Support: Enhance digital self-service options (e.g., user-friendly mobile apps, comprehensive FAQs, AI-powered chatbots) to reduce reliance on traditional call centres and improve accessibility.
+- Feedback Loops: Establish strong feedback mechanisms to capture customer sentiment (e.g., post-interaction surveys) and use these insights to continuously improve service processes.
 
-Consider collaborations with academic institutions or experts to boost credibility and interest.
+#### 4. Data-Driven Customer Segmentation & Engagement:
+Leverage the rich data from the dashboards to understand different customer segments and tailor engagement strategies to their specific needs and churn risks.
+##### Actionable Steps:
+- Churn Prediction Model: Develop and refine a predictive analytics model to identify customers at high risk of churning based on their usage patterns, satisfaction scores, complaint history, and tenure.
+- Segment-Specific Marketing: Tailor marketing messages and product offerings to different age brackets and geographical regions, focusing on the specific value propositions most relevant to them. For instance, market broadband solutions to middle and older adults, and value-packed mobile SIM plans to younger adults.
+- Regional Focus: Conduct deeper localized analysis for top and bottom-performing states to understand unique challenges or opportunities. Allocate resources (e.g., network upgrades, promotional activities) strategically to address regional disparities and maximise retention in vulnerable areas.
 
-4. Leverage Historical Trends for Strategic Publishing
-- The 2019 spike suggests a period of viral growth. Analyze content formats and trends from that year to replicate successful patterns.
-- With recent increases in 2023–2024, continue to invest in video production and track algorithm changes or user behavior that may be driving renewed engagement.
+#### 5. Continuous Monitoring & Adaptability:
+Churn analysis should be an ongoing process, not a one-time exercise. Regularly monitor key performance indicators and adapt strategies based on evolving market conditions and customer feedback.
+##### Actionable Steps:
+- Dashboard Utilization: Make these churn analysis dashboards (and potentially more granular versions) a standard part of weekly/monthly management reviews.
+- A/B Testing: Continuously test different pricing models, promotional offers, and customer service approaches to identify what works best in reducing churn.
+- Competitor Intelligence: Maintain a robust competitor intelligence gathering system to stay ahead of market changes and react swiftly to new offers or service innovations.
 
-5. Encourage Interaction in Passive Consumption Categories
-- Categories like Education and Science & Tech, despite moderate views, have lower likes—indicating passive viewing.
-- Encourage engagement by adding calls to action (e.g., “Like if you found this useful”), interactive elements, or community polls.
-
-6. Optimize for Platform Algorithms
-- Since likes and watch time are key metrics for algorithmic promotion, focus on producing compelling intros, retention-friendly formats, and high-engagement content to increase visibility across all categories.
-
-7. Monitor and Adapt Content Strategies
-- Regularly review performance data to identify emerging trends and adapt content strategies. This is especially important given the recent upward trend, which could indicate new content types or topics gaining popularity.
-
-
-### LIMITATIONS
-There were some videos that neither had a like or dislike which might lead to inconsistency.
+By implementing these recommendations, MTN can create a more resilient customer base, foster greater loyalty, and significantly trim down its churn rate across all customer segments and service offerings.
